@@ -398,10 +398,10 @@ Movement (Controlled)
 
 Sensors & Autonomous Mode
 
--```ping```: Triggers the ultrasonic sensor and prints the measured distance in millimeters to the terminal.
--```motion```: Activates the PIR sensor. If motion is detected, the onboard red LED will turn on for two seconds.
--```on```: Engages the autonomous surveillance mode. The robot will scan its environment, move, and detect motion.
--```off```: Disengages the autonomous mode.
+- ```ping```: Triggers the ultrasonic sensor and prints the measured distance in millimeters to the terminal.
+- ```motion```: Activates the PIR sensor. If motion is detected, the onboard red LED will turn on for two seconds.
+- ```on```: Engages the autonomous surveillance mode. The robot will scan its environment, move, and detect motion.
+- ```off```: Disengages the autonomous mode.
 
 IR Remote Control
 
