@@ -407,9 +407,9 @@ IR Remote Control
 
 The robot can be controlled using a universal LG TV remote with the following button mapping:
 
-Up Arrow: Move forward.
-Down Arrow: Move in reverse.
-Left Arrow: Rotate counter-clockwise.
-Right Arrow: Rotate clockwise.
-OK Button: Stop all movement.
-Power Button: Toggle autonomous navigation mode on and off.
+- Up Arrow: Move forward.
+- Down Arrow: Move in reverse.
+- Left Arrow: Rotate counter-clockwise.
+- Right Arrow: Rotate clockwise.
+- OK Button: Stop all movement.
+- Power Button: Toggle autonomous navigation mode on and off.
