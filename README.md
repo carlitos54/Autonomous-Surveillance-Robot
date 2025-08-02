@@ -385,16 +385,16 @@ Connect to the robots virtual COM port using a terminal emulator (e.g., PuTTY) w
 Movement (Continuous)
 - ```forward```: Moves the robot forward at full speed.
 - ```reverse```: Moves the robot in reverse at full speed.
-- ```cw```: Rotates the robot clockwise at full speed.
-- ```ccw```: Rotates the robot counter-clockwise at full speed.
+- ```cw```: Rotates the robot clockwise at full speed (±10° degree accuracy).
+- ```ccw```: Rotates the robot counter-clockwise at full speed (±10° degree accuracy).
 - ```stop```: Stops all motor movement.
 
 Movement (Controlled)
 
 - ```forward [speed] [distance]```: Moves the robot forward for a specific distance (in mm) at a percentage of its max speed (1-100).
 - ```reverse [speed] [distance]```: Moves the robot in reverse for a specific distance (in mm) at a percentage of its max speed (1-100).
-- ```cw [angle]```: Rotates the robot clockwise by a specific angle in degrees.
-- ```ccw [angle]```: Rotates the robot counter-clockwise by a specific angle in degrees.
+- ```cw [angle]```: Rotates the robot clockwise by a specific angle in degrees (±10° degree accuracy).
+- ```ccw [angle]```: Rotates the robot counter-clockwise by a specific angle in degrees (±10° degree accuracy).
 
 Sensors & Autonomous Mode
 
