@@ -133,7 +133,7 @@ void parseFields(USER_DATA *data)
 ```getFieldString```
 
 Returns the value of the field requested if the field number is in range otherwise returns NULL.
-```
+```c
 char* getFieldString(USER_DATA *data, uint8_t fieldNumber)              //returns pointer to where string exist
 {
     char *ret;
@@ -154,7 +154,7 @@ char* getFieldString(USER_DATA *data, uint8_t fieldNumber)              //return
 ```getFieldInteger```
 
 Returns the integer value of the field if the field number is in range and the field type is numeric otherwise returns NULL
-```
+```c
 int32_t getFieldInteger(USER_DATA* data, uint8_t fieldNumber)
 {
 
@@ -176,7 +176,7 @@ int32_t getFieldInteger(USER_DATA* data, uint8_t fieldNumber)
 ```isCommand```
 
 This function returns true if the command matches the first field and the number of arguments is greater than or equal to the requested number of minimum arguments.
-```
+```c
 bool isCommand(USER_DATA* data, const char strCommand[], uint8_t minArguments)
 {
     bool ret = 0;
@@ -214,7 +214,7 @@ Autonomous Mode State Machine
 
 The core of the autonomous surveillance is a state machine within the ```main()``` function's ```while``` loop. It cycles through three phases: idle, scanning, and moving. While scanning it will use the wheel interrupt counts to calculate and scan several angles to determine the best route, if motion is detected the PIR sensor will trigger a red LED to turn on. 
 
-```
+```c
 if(AUTO_MODE == 1)
 {
     BLUE_LED = 1;
@@ -274,7 +274,7 @@ Motor Control (```PWM.c```)
 
 The ```forwardD()``` function demonstrates how the robot moves a specific distance at a given speed. It uses the ```calculatedDist()``` function to convert the distance in millimeters to the required number of encoder pulses.
 
-```
+```c
 void forwardD(uint32_t SPEED, uint32_t DISTANCE)
 {
     DISTANCE_INUSE = 1;
@@ -287,7 +287,7 @@ Sensor Handling(```pir_ultrasonic.c```)
 
 The ```Echo_ISR()``` is the interrupt service routine for the ultrasonic sensor. It uses a wide timer in capture mode to measure the duration of the echo pulse, which is then converted to a distance in millimeters.
 
-```
+```c
 void Echo_ISR()
 {
     if(phase == 0)
@@ -312,7 +312,7 @@ Remote Control(```remote.c```)
 
 The ```Remote_ISR()``` handles interrupts from the IR receiver. It decodes the received signal to determine which button on the remote was pressed and then executes the corresponding action.
 
-```
+```c
 void Remote_ISR()
 {
     TIME = WTIMER3_TAV_R;
