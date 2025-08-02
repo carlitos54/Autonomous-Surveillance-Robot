@@ -42,7 +42,7 @@ The project is written in C and is organized into several modules:
 ```getsUart0```
 
 Gets a character from UART and uses ASCII values to ensure it meets the necessary inputs for the commands defined in main. In the while loop, the function ensures backspaces are ignored, recognizes when a space is entered and ends the string or if a carraige return is sent it ends the string and returns the function.
-```
+```c
 void getsUart0(USER_DATA *data)
 {
     int count = 0;
@@ -79,7 +79,7 @@ void getsUart0(USER_DATA *data)
 ```parseFields```
 
 Using 3 sets of characters (alpha, numeric, and delimiter) the function assume the last character was a delimiters when searching the buffer and labels the field according to which character set it falls into, this is done until the end of the buffer string is found or until MAX_FIELDS are reached and returns.
-```
+```c
 void parseFields(USER_DATA *data)
 {
     int counter = 0;
