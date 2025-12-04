@@ -15,13 +15,15 @@ This repository contains the code for an autonomous surveillance robot built usi
 
 ## Hardware
 
-- Microcontroller: TM4C123GH6PM Tiva C Series
--Sensors:
---PIR (Passive Infrared) sensor for motion detection.
---Ultrasonic sensor for distance measurement and obstacle avoidance.
--Actuators: Two DC motors with encoders.
--Motor Driver: L298N or similar H-bridge driver.
--Remote: An infrared remote for manual control.
+Microcontroller: TM4C123GH6PM Tiva C Series
+
+Sensors:
+
+* PIR (Passive Infrared) sensor for motion detection.
+* Ultrasonic sensor for distance measurement and obstacle avoidance.
+* Actuators: Two DC motors with encoders.
+* Motor Driver: L298N or similar H-bridge driver.
+* Remote: An infrared remote for manual control.
 
 ## Software
 
