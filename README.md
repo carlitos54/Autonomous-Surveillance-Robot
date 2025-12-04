@@ -355,31 +355,28 @@ void Remote_ISR()
 }
 ```
 ## How to Use
-1. Hardware Setup:
-   
-- Connect Motor Driver inputs to the TM4C123GH6PM 
--- (Left Motor:  M1PWM2 (PA6) and M1PWM3 (PA7)
--- (Right Motor: M0PWM6 (PC4) and M0PWM7 (PC5)
-- Connect the wheel encoder phototransistors to GPIO pins PC6 and PC7.
-- Connect the PIR sensor output to pin PE4.
-- Connect the ultrasonic sensor:
--- Trig pin to PD0.
--- Echo pin to PD6.
-- Connect the IR receiver output to pin PD2.
-- Power the microcontroller and motor driver.
-  
-2. Software Setup:
-  
-- Open the project in Code Composer Studio.
-- Build the project to generate the executable file (.out).
-- Flash the .out file to the TM4C123GH6PM.
-  
-3.Running the Robot:
 
+### Hardware Setup:
+* Connect Motor Driver inputs to the TM4C123GH6PM 
+* (Left Motor:  M1PWM2 (PA6) and M1PWM3 (PA7)
+* (Right Motor: M0PWM6 (PC4) and M0PWM7 (PC5)
+* Connect the wheel encoder phototransistors to GPIO pins PC6 and PC7.
+* Connect the PIR sensor output to pin PE4.
+* Connect the ultrasonic sensor:
+* Trig pin to PD0.
+* Echo pin to PD6.
+* Connect the IR receiver output to pin PD2.
+* Power the microcontroller and motor driver.
+
+### Software Setup: 
+* Open the project in Code Composer Studio.
+* Build the project to generate the executable file (.out).
+* Flash the .out file to the TM4C123GH6PM.
+  
+### Running the Robot:
 You can control the robot in two ways: through a serial terminal or with an IR remote.
 
-UART Commands
-
+#### UART Commands
 Connect to the robots virtual COM port using a terminal emulator (e.g., PuTTY) with a baud rate of 115200. The following commands are available:
 
 Movement (Continuous)
